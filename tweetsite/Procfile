@@ -1,1 +1,2 @@
-web: gunicorn tweetsite.wsgi
+web: gunicorn tweetsite.wsgi:application
+

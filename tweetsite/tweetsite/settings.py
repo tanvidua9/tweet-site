@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-99+ja+2cy_^dq($i_f_2bb1(-=(j7g*rc+ja7jy_zci2-_p8!m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
@@ -128,6 +128,8 @@ MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 
 STATIC_URL= 'static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 LOGIN_URL='/accounts/login'
 LOGIN_REDIRECT_URL="/tweet/"
